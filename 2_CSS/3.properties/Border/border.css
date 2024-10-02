@@ -1,0 +1,30 @@
+h1 {
+    border-style: solid;
+    text-align: center;
+    background: green;
+    border-radius: 20px;
+}
+
+h2{
+    color:royalblue;
+}
+
+h3{
+    color:aqua
+}
+
+.dotted{
+    border-style: dotted;
+}
+
+.dashed {
+    border-style: dashed;
+}
+
+.solid {
+    border-style: solid;
+}
+
+.double {
+    border-style: double;
+}

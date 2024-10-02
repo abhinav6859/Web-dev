@@ -13,13 +13,13 @@ here h1 is selector , all h1 change in to blue clolor .
  it's used for grouping elements in ur html file to apply the same css rule to all 
  of them .
 
-<h2 class="red-heading"> ur text </h2>
+<h2 class="class-name"> ur text </h2>
 <h2 > ur  other text </h2>
 <h2 > ur other text </h2>
-<p class="red-heading"> ur text </p>   ( allow for diifernt parts of html )
+<p class="class-name"> ur text </p>   ( allow for diifernt parts of html )
 
 css
-.red-heading{
+.class-name{
     color:red 
 }
 

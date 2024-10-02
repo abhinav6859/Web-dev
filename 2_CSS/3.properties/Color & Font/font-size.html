@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Font-Size</title>
+    <style>
+      #pixel {
+       font-size: 20px;    /*  1px= 0.26 mm */
+      }
+
+      #point {
+        font-size: 20pt;     /*  1pt=0.35   */
+      }
+
+      #em {
+        font-size: 1em;      /*  1em=100% of parent  */
+      }
+
+      #rem {
+        font-size: 1rem;      /* 1rem=100% of root */
+      }
+
+      footer {
+        font-size: 12pt;
+      }
+
+      html {
+        font-size: xx-large;
+      }
+
+      #cursive {
+      font-family: cursive;
+    }
+
+    #monospace {
+      font-family: monospace;
+    }
+
+    #fantasy {
+      font-family: fantasy;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <p id="pixel">1 Pixel is 1/96 of an Inch</p>
+    <p id="point">1 Point is 1/72 of an Inch</p>
+    <footer>
+      <p id="em">1em is 100% the size of the parent element</p>
+      <!-- rem effect only by root -->
+      <p id="rem">1rem is 100% the size of the root element</p>
+    </footer>
+    <p id="cursive">Cursive</p>
+    <p id="monospace">Monospace</p>
+    <p id="fantasy">Fantasy</p>
+  </body>
+</html>
