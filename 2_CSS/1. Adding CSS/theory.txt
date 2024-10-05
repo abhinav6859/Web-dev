@@ -1,0 +1,46 @@
+theory part of css
+
+.three ways three way to add css in to html website 
+
+1. inline     <tag style ="css"/>
+2. internal   <style>css</style>
+3. external   <link href="style.css"/>
+
+.Inline
+
+<html style="Background:blue"></html>
+   first part(Background here) is property and second part (blue) is value 
+   it's only for specific sections
+
+.internal
+<html>
+    <head>
+       <style>
+          html{
+            Background:red;
+          }
+        </style>  
+     <head>   
+<html>
+  this internal css is only on page document , its not for multipage    .
+
+.External
+
+    <html>
+      <head>
+         <link
+            rel="stylesheet"         (relationship)
+
+            href="./style.css"       (location)
+             />
+     <head>   
+<html>
+In style.css
+html{
+   background:green;
+}
+External for multipage
+
+
+
+
