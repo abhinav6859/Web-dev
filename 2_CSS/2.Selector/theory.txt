@@ -1,0 +1,51 @@
+Selector 
+
+means select a specific element or tag or link anything and style it .
+
+1.Element selector 
+h1{
+    color:blue
+}
+here h1 is selector , all h1 change in to blue clolor .
+
+2.  Class selector 
+ a class is something that we can add as an atttribute to any HTML element .
+ it's used for grouping elements in ur html file to apply the same css rule to all 
+ of them .
+
+<h2 class="red-heading"> ur text </h2>
+<h2 > ur  other text </h2>
+<h2 > ur other text </h2>
+<p class="red-heading"> ur text </p>   ( allow for diifernt parts of html )
+
+css
+.red-heading{
+    color:red 
+}
+
+3. ID selector
+it same as class selector but select unique element nd class select multi element 
+<h2 id="main"> ur text </h2>
+<h2 > ur  other text </h2>
+<h2 > ur other text </h2>
+
+css
+#main{
+    color:red;
+}
+
+4. Attribute selector 
+
+css
+p[draggable]{
+    color:red
+}
+here p html element and draggable is atttribute
+
+<p draggable="true"> drag me </p>
+
+5. Universal selector
+*{
+    color:red
+}
+it means select all no matter it's a class ,id ,attribute
