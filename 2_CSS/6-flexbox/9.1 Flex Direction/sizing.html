@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex sizing</title>
+
+    <style>
+       .a{
+        display: flex; 
+         gap: 10px;
+         flex-wrap: wrap;
+        border:5px solid #be2edd; 
+        
+       
+       }
+       .a{
+   align-items :center; 
+     height: 14vh;  
+    justify-content:center ;
+    
+    }
+    
+
+    .a > *{
+        border:5px solid blanchedalmond ;
+        flex:1 1 0 ;
+        /* it means 
+         flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        */
+    }
+   
+    .c{flex: 3;}
+
+       .b{ background-color: blue; }
+       .c{ background-color: rgb(250, 209, 43); }
+       .d{ background-color:#be2edd;; }
+       .e{ background-color: rgb(38, 232, 128); }
+       .f{ background-color:#f0932b ;}
+    </style>
+</head>
+<body>
+    <div class="a">
+           <div class="b">home</div>
+           <div class="c">home</div>
+           <div class="d">home</div>
+           <div class="e">home</div>
+           <div class="f">home</div>
+          
+          
+    </div>
+</body>
+</html>
