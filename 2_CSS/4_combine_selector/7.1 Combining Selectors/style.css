@@ -1,0 +1,36 @@
+/*for Group selector
+we can select two class or id */
+h1,
+h2 {
+  color: blueviolet;
+}
+
+/* Child selector
+parent > child
+child shoul be one level inside child
+*/
+.box > p {
+  color: firebrick;
+}
+
+/* Descendent 
+all li blue of class box
+*/
+ .box li {
+  color: blue;
+}
+
+/* Chained 
+selectorselector  (no space)
+we can select many selector in same level but without space 
+*/
+li.done {
+  color: green;
+}
+
+/* Multiple Combiners 
+
+here ul is ansestor and p.done from chaining*/
+ul p.done {
+  font-size: 0.5rem;
+}
