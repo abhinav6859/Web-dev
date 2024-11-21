@@ -8,14 +8,13 @@
   background: yellow;
 }
 #animate {
-  width: 50px;
+  width: 50px;  
   height: 50px;
   position: absolute;
   background-color: red;
 }
 </style>
 <body>
-
 <p><button onclick="myMove()">Click Me</button></p> 
 
 <div id ="container">
@@ -25,10 +24,15 @@
 <script>
 function myMove() {
   let id = null;
-  const elem = document.getElementById("animate");   
-  let pos = 0;
+  const elem = document.getElementById("animate");  // selects the element to animate.
+  let pos = 0;     //sets the starting position of the element.
   clearInterval(id);
-  id = setInterval(frame, 10);
+
+  // starts calling the frame function every 5 milliseconds.
+
+  id = setInterval(frame, 5); 
+
+  // stops the animation if the position reaches 350px.
   function frame() {
     if (pos == 350) {
       clearInterval(id);
