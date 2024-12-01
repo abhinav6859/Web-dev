@@ -1,0 +1,14 @@
+
+ .container1{
+     background: linear-gradient(300deg, #145d76, #5529c4, #3db9e3); 
+   
+     background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite; 
+ }
+   #pricing{
+    background-image: url('https://cdn.pixabay.com/photo/2024/04/19/12/13/ai-generated-8706226_640.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+}
