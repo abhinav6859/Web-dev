@@ -1,4 +1,8 @@
-
+li{
+  font-size:larger;
+  font-weight: 750;
+ 
+   }
  .container1{
      background: linear-gradient(300deg, #145d76, #5529c4, #3db9e3); 
    
@@ -11,4 +15,25 @@
     background-size: cover;
     background-position: center;
     background-attachment:scroll;
+border-radius: 10%;
+}
+#a{
+  border-radius: 19%;
+width: 80%;
+}
+.card-body{
+
+  border-radius: 50%;
+}
+/* .image{
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-XTqMTfcGvQyv8twRx4CiJaKfn3Gmt9GmKw&s') ;
+
+} */
+
+#time {
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  text-align:center;
+  color: #333;
 }
