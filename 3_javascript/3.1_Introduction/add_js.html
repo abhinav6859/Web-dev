@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Add JavaScript Code inside Head Section
+    </title>
+
+    <script>
+        function myFun() {
+            document.getElementById("demo")
+                .innerHTML = "Content changed!";
+        }
+        function fun() {
+            document.getElementById("demo")
+                .innerHTML = "Content ";
+        }
+        function fun1() {
+            document.getElementById("demo1")
+                .innerHTML = "Content ";
+        }
+    </script>
+</head>
+
+<body>
+    <h2>
+        Add JavaScript Code
+        inside Head Section
+    </h2>
+
+    <h3 id="demo" style="color:green;">
+        GeeksforGeeks
+    </h3>
+    <h3 id="demo1" style="color:green;">
+        abhinav vats
+    </h3>
+
+    <button type="button" onclick="myFun()" ondblclick="fun()" >
+        Click Here
+    </button>
+    <button type="button" onclick="fun1()" onkeypress="fun()" >
+        Click Here
+    </button>
+</body>
+
+</html>
