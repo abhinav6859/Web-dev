@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+
+<p>The length of the string is:</p>
+<p id="demo0"></p>
+
+<script>
+let text0 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo0").innerHTML = text0.length;
+</script>
+
+
+<h2>The slice() Method</h2>
+
+<p>The sliced (extracted) part of the string is:</p>
+<p id="demo"></p>
+
+<script>
+let text = "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+document.getElementById("demo").innerHTML = part; 
+
+</script>
+
+
+<h2>The repeat() Method</h2>
+
+<p>repeat() returns a new string with a number of copies of a string:</p>
+
+<p id="demo1"></p>
+
+<p>repeat() is not supported in Internet Explorer.</p>
+
+<script>
+let text1 = "Hello world!";
+let result = text1.repeat(4);
+
+document.getElementById("demo1").innerHTML = result;
+</script>
+
+<h2>The charAt() Method</h2>
+
+<p>The charAt() method returns the character at a given position in a string:</p>
+
+<p id="demo2"></p>
+
+<script>
+var text2 = "HELLO WORLD";
+document.getElementById("demo2").innerHTML = text2.charAt(0);
+</script>
+
+<h2>The at() Method</h2>
+
+<p>The at() method returns an indexed element from a string:</p>
+
+<p id="demo3"></p>
+
+<script>
+const name = "W3Schools";
+let letter = name.at(2);
+
+document.getElementById("demo3").innerHTML = letter;
+</script>
+
+<h2>The substr() method</h2>
+<p>The substr() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+<p id="demo4"></p>
+
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo4").innerHTML = str.substr(7);
+</script>
+
+</body>
+</html>
