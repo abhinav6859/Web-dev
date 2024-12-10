@@ -1,0 +1,116 @@
+
+<!-- if you want Proper knowledge then  U can learn from here 
+ https://www.w3schools.com/js/js_arrays.asp -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Extra large or extra small numbers can be written with scientific (exponent) notation:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 123e5;
+let y = 123e-5;
+document.getElementById("demo").innerHTML = x +  y;
+</script>
+
+
+<p>If you add a number and a numeric string, the result will be a concatenated string:</p>
+
+<p id="demo1"></p>
+
+<script>
+let x1 = 10;
+let y1 = "20";
+let z = x1 + y1;
+document.getElementById("demo1").innerHTML = z;
+</script>
+
+
+<p>JavaScript will try to convert strings to numbers when multiplying:</p>
+
+<p id="demo2"></p>
+
+<script>
+let x2 = "100";
+let y2 = "10";
+let z1 = x2 * y2;   
+document.getElementById("demo2").innerHTML = z1;
+</script>
+
+<h3>infinity</h3>
+<p>Infinity is returned if you calculate a number outside the largest possible number:</p>
+
+<p id="demo3"></p>
+
+<script>
+let myNumber = 2; 
+let txt = "";
+while (myNumber != Infinity) {
+   myNumber = myNumber * myNumber;
+   txt = txt + myNumber + "<br>";
+}
+document.getElementById("demo3").innerHTML = txt;
+</script>
+
+
+<p>Division by zero generates Infinity;</p>
+
+<p id="demo4"></p>
+
+<script>
+let x3 = 2/0;
+let y3 = -2/0;
+document.getElementById("demo4").innerHTML = x3 + "<br>" + y3;
+</script>
+
+
+<h2>JavaScript Numbers</h2>
+
+<p>Numeric constants, preceded by 0x, are interpreted as hexadecimal:</p>
+
+<p id="demo5"></p>
+
+<script>
+let x4 = 0xAA;
+document.getElementById("demo5").innerHTML = "0xAA = " + x4;
+</script>
+
+
+<h3>The toString()</h3>
+<p>The toString() method can output numbers from base 2 to 36:</p>
+
+<p id="demo6"></p>
+
+<script>
+let myNum = 32;
+document.getElementById("demo6").innerHTML =
+"Decimal 32 = " + "<br><br>" + 
+
+ "Hexatrigesimal (base 36): " + myNum.toString(36) + "<br>" +
+"Duotrigesimal (base 32): " + myNum.toString(32) + "<br>" +
+"Hexadecimal (base 16): " + myNum.toString(16) + "<br>" +
+"Duodecimal (base 12): " + myNum.toString(12) + "<br>" +
+"Decimal (base 10): " + myNum.toString(10) + "<br>" +
+"Octal (base 8): " + myNum.toString(8) + "<br>" +
+"Binary (base 2): " + myNum.toString(2);
+</script>
+
+<h2>The isInteger() Method</h2>
+
+<p>The isInteger() method returns true if the argument is an integer.</p>
+<p>Otherwise it returns false.</p>
+
+<p id="demo7"></p>
+
+<script>
+document.getElementById("demo7").innerHTML =
+Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+</script>
+
+</body>
+</html>

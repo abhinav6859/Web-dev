@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Looping an Array</h2>
+
+<p id="demo"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango",4];
+
+fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+
+let l = fruits.length;
+
+let text = "<ul>";
+for (let i = 0; i < l; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+<p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo1"></p>
+
+<script>
+const fruits1 = ["Coconut", "Banana", "Apple"];
+document.getElementById("demo1").innerHTML = fruits1;
+
+function myFunction() {
+  fruits1[fruits1.length] = "Lemon";
+  document.getElementById("demo1").innerHTML = fruits1;
+}
+</script> 
+
+</body>
+</html>
