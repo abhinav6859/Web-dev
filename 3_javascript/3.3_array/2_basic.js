@@ -3,7 +3,7 @@ const person = ["John", "Doe", 46,'t'];
 console.log(person[3]);
 let a=person.length;
 console.log(a);
-
+console.log(person);
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 let fLen = fruits.length;
@@ -12,3 +12,4 @@ let fLen = fruits.length;
 for (let i = 0; i < fLen; i++) {
    "<li>" +console.log( fruits[i] )+ "</li>";
 }
+console.log( fruits);
