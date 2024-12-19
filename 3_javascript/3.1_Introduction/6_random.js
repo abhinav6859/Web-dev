@@ -1,4 +1,4 @@
-// love calculator
+
 
 for(var a=0;a<=190;a++){
 var b=Math.random();
