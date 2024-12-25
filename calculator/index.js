@@ -16,43 +16,6 @@ setInterval(updateTime, 1000);
 
 
 
-// const outputElement = document.getElementById("output");
-
-// outputElement.style.color = "green";
-
-// function a(){
-
-//     const Num1=document.getElementById("input");
-//     const Num2=document.getElementById("input1");
-//     const Num3=document.getElementById("input2");
-
-
-//  var b = calculator(Num1,Num2,Num3);
-// outputElement.textContent = `Ans: ${b}`;
-// }
-
-// function add(num1,num2) {
-// return num1+num2;
-// }
-// function substract(num1,num2) {
-//     return num1-num2;
-//     }
-//     function multiply(num1,num2) {
-//         return num1*num2;
-//         }
-//         function divide(num1,num2) {
-//             return num1/num2;
-//             }
-//             function modulo(num1,num2) {
-//                 return num1%num2;
-//                 }
-
-// function calculator(num1,num2,operator) {
-  
-//     return operator(num1,num2);
-   
-//     }
-
     const outputElement = document.getElementById("output");
 
     outputElement.style.color = "green";

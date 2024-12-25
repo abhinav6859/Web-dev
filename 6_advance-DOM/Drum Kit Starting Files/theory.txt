@@ -11,7 +11,7 @@ such as:
 *  once: If true, the listener will execute only once and then remove itself.
 *  passive: If true, indicates that the listener will never call event.preventDefault().
 
-
+element.addEventListener("click", function(){ alert("Hello World!"); });
 
 ===========================================================
 
@@ -29,7 +29,6 @@ function handleclick(){
     });
 
 
-
 ===============================================
 
    Key Properties of the keydown Event
@@ -45,6 +44,7 @@ document.addEventListener("keydown", function(event) {
 3. event.altKey, event.ctrlKey, event.shiftKey, event.metaKey: Booleans indicating whether the Alt, Ctrl, Shift, or Meta (Command/Windows) key is being held.
 
 
-==============================================================
+===============================================================
+
 
 

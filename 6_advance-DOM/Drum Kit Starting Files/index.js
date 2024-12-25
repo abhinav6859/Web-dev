@@ -1,23 +1,26 @@
 
    
-    // change color of last clicked button 
-let drumButtons = document.querySelectorAll(".drum");
+ let drumButtons = document.querySelectorAll(".drum");
 
-    for( let i=0; i < drumButtons.length ; i++){
-      drumButtons[i].addEventListener("click",function(){
-   
-      drumButtons.forEach(button => button.style.color = "");
-    this.style.color ="red"; // it will change color of clicked button
-    console.log(this.innerHTML);
-  });
-}
+ document.addEventListener("keydown", function(event) {
+     // Loop through all drum buttons
+     drumButtons.forEach(button => {
+         // Reset color for all buttons
+         button.style.color = "";
+ 
+         // Check if the button's text matches the pressed key
+         if (button.innerText.toLowerCase() === event.key.toLowerCase()) {
+             // Change the color of the matched button
+             button.style.color = "red";
+         }
+     });
+ });
+ 
 
-
-
-    for( let i=0; i < drumButtons.length ; i++){
-      drumButtons[i].addEventListener("click",function(){
-var buttonInnerHTML =this.innerHTML;
-switch (buttonInnerHTML){
+  
+     document.addEventListener("keydown",function(event){
+ 
+switch (event.key){
   case "w":
     var crash = new Audio('sounds/crash.mp3');
     crash.play();
@@ -55,11 +58,11 @@ switch (buttonInnerHTML){
     break;
 
 
-  default: console.log(this.innerHTML);
+  default: console.log(event.key);
 
 }
 });
-}
+
 
 
   // var audio = new Audio("sounds/tom-1.mp3");
