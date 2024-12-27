@@ -1,0 +1,50 @@
+An event listener
+
+element.addEventListener(event, listener, options);
+
+Parameters
+*  event: The name of the event you want to listen for (e.g., "click", "keydown", "mouseover").
+*  listener: A function to execute when the event is triggered.
+*  options (optional): An object or boolean that configures the behavior of the listener,      
+such as:
+ *  capture: Indicates whether to capture the event during the capture phase (true) or the bubble phase (false).
+*  once: If true, the listener will execute only once and then remove itself.
+*  passive: If true, indicates that the listener will never call event.preventDefault().
+
+
+
+===========================================================
+
+click button from js
+document.querySelector("button").addEventListener("click",handleclick);
+function handleclick(){
+    alert("I got clicked!");
+
+}
+      OR
+      document.querySelector(".set").addEventListener("click",function(){
+        var audio = new Audio("sounds/tom-1.mp3");
+        audio.play();
+        alert("I got clicked!");
+    });
+
+
+
+===============================================
+
+   Key Properties of the keydown Event
+
+document.addEventListener("keydown", function(event) {
+    console.log(`Key pressed: ${event.key}`);
+    console.log(`Key code: ${event.code}`);
+});
+
+
+1. event.key: The value of the key pressed (e.g., "a", "Enter").
+2. event.code: The physical key on the keyboard (e.g., "KeyA", "Space").
+3. event.altKey, event.ctrlKey, event.shiftKey, event.metaKey: Booleans indicating whether the Alt, Ctrl, Shift, or Meta (Command/Windows) key is being held.
+
+
+==============================================================
+
+
