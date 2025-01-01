@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #animate {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    #container {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background-color: lightgray;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="animate"></div>
+  </div>
+  <button onclick="myMove()">Start Animation</button>
+
+  <script>
+    function myMove() {
+      const elem = document.getElementById("animate");
+      let posX = 0; // Horizontal position
+      let posY = 0; // Vertical position
+      const step = 5; // Movement step size
+      const maxRight = 350; // Maximum right position
+      const maxBottom = 350; // Maximum bottom position
+
+      function frame() {
+        if (posY <= maxBottom) { // Ensure the object moves within bounds
+          if (posX < maxRight) {
+            posX += step; // Move right
+          } else {
+            posX = 0; // Reset horizontal position
+            posY += 50; // Move down by one line
+          }
+          if (posY > maxBottom) {
+            clearInterval(intervalId); // Stop animation at the last line
+          }
+        }
+        // Update position
+        elem.style.left = posX + "px";
+        elem.style.top = posY + "px";
+      }
+
+      // Start the animation
+      const intervalId = setInterval(frame, 20);
+    }
+  </script>
+</body>
+</html>
