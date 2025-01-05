@@ -1,0 +1,63 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #011f3f;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-container {
+  text-align: center;
+}
+
+#level-title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  border: 5px solid black;
+  
+  cursor: pointer;
+}
+
+#green {
+  background-color: #00a74a;
+}
+
+#red {
+  background-color: #d71c1c;
+}
+
+#yellow {
+  background-color: #ffea00;
+}
+
+#blue {
+  background-color: #1c8cff;
+}
+
+.btn.pressed {
+  box-shadow: 0 0 20px white;
+  opacity: 0.7;
+}
+
+body.game-over {
+  background-color: red;
+}
