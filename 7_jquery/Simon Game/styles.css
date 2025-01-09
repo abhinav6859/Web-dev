@@ -1,14 +1,18 @@
 /* styles.css */
 body {
+  width: 100%;
   font-family: Arial, sans-serif;
   text-align: center;
   background-color: #011f3f;
   margin: 0;
   padding: 0;
   height: 100vh;
-  display: flex;
+   display: flex; 
   justify-content: center;
   align-items: center;
+
+  font-size: 160%;
+ 
 }
 
 #game-container {
@@ -60,4 +64,23 @@ body {
 
 body.game-over {
   background-color: red;
+}
+
+
+.a{
+  position: absolute;    
+ min-width:fit-content;
+ display: flex;
+    
+}
+button{
+  font-size: 100%;
+  border-radius: 30px;
+  background-color: #77799d;
+  border: 3px solid black;
+  cursor: pointer;      
+  bottom: 10px; 
+ margin-top: 20%;
+  position: fixed; 
+ 
 }

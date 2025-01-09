@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Says Game Pattern</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      color: #333;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #0056b3;
+    }
+
+    .key-points {
+      background-color: #f0f8ff;
+      border-left: 4px solid #0056b3;
+      padding: 10px 20px;
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0056b3;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simon Says Game Pattern</h1>
+  <p>The Simon Says game generates a sequence of colors that players must remember and repeat in the correct order. Here's how the pattern evolves as the game progresses:</p>
+
+  <h2>Pattern Explanation</h2>
+  <h3>Starting the Game</h3>
+  <p>The game starts with a single random color added to the pattern (e.g., <code>["red"]</code>).</p>
+
+  <h3>Adding to the Pattern</h3>
+  <p>At each level, the game adds one more random color to the sequence. For example:</p>
+  <ul>
+    <li>Level 1: <code>["red"]</code></li>
+    <li>Level 2: <code>["red", "blue"]</code></li>
+    <li>Level 3: <code>["red", "blue", "green"]</code></li>
+  </ul>
+
+  <h3>Player's Role</h3>
+  <p>The player must click the buttons in the exact order of the pattern shown. If the player successfully repeats the pattern:</p>
+  <ul>
+    <li>They move to the next level, where the sequence gets longer.</li>
+    <li>If the player makes a mistake, the game ends.</li>
+  </ul>
+
+  <h2>Visualizing a Game Example</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Level</th>
+        <th>Game Pattern</th>
+        <th>Player Input</th>
+        <th>Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><code>["red"]</code></td>
+        <td><code>["red"]</code></td>
+        <td>✅ Correct, Next Level</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td><code>["red", "blue"]</code></td>
+        <td><code>["red", "blue"]</code></td>
+        <td>✅ Correct, Next Level</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td><code>["red", "blue", "green"]</code></td>
+        <td><code>["red", "blue", "yellow"]</code></td>
+        <td>❌ Wrong, Game Over</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="key-points">
+    <h3>Key Points</h3>
+    <ul>
+      <li><strong>The sequence is cumulative:</strong> Each level adds one more color to the previous pattern.</li>
+      <li><strong>The order matters:</strong> The player must reproduce the exact order.</li>
+      <li><strong>The game continues:</strong> The game proceeds until the player either fails to replicate the pattern or decides to stop.</li>
+    </ul>
+  </div>
+</body>
+</html>
