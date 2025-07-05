@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About me</title>
   <style>
-    body{
-      background-image:linear-gradient(rgba(26, 26, 164, 0.783), rgba(220, 30, 90, 0.5)),
-                  url("../../media/examples/lizard.png");
-    }
+     body{
+     background-image: linear-gradient(to bottom, #f0f0f0, #2f0db9);
+    } 
   </style>
 </head>
 <body>
   <h1>About Me</h1>
+   <button id="read-page" style="position:fixed;bottom:20px;right:20px;z-index:1000;">🔊 Read Page</button>
+  
 
 <p>Hi! I am Abhinav Vats , a somphomore student at BEU majoring in  Computer  Engineering . I have a strong interest in  software development and enjoy building skills that help me grow both academically and professionally.</p>
 
@@ -24,5 +25,25 @@
 <p>Outside of academics, I enjoy  reading ,fitness , experimenting with new technologies,stock marketing. I am always excited to connect with others who share my passion for coding and my personal interest.</p>
 
 <p>Let's connect if you'd like to learn more or have an exciting opportunity to share!</p>
+ <script>
+    document.getElementById('read-page').onclick = function() {
+      // Get all visible text from the body (excluding script/style/video)
+      function getTextContent(element) {
+        if (element.tagName === "SCRIPT" || element.tagName === "STYLE" || element.tagName === "VIDEO") return "";
+        let text = "";
+        for (let node of element.childNodes) {
+          if (node.nodeType === Node.TEXT_NODE) {
+            text += node.textContent + " ";
+          } else if (node.nodeType === Node.ELEMENT_NODE) {
+            text += getTextContent(node);
+          }
+        }
+        return text;
+      }
+      const text = getTextContent(document.body);
+      const utterance = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(utterance);
+    };
+  </script>
 </body>
 </html>

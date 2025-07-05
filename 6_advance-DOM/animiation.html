@@ -25,7 +25,8 @@
 }
 </style>
 <body>
-<p><button onclick="myMove()">Click Me</button></p> 
+<p><button onclick="myMove()">diagonally</button></p> 
+<p><button onclick="myMove1()">vertically</button></p> 
 
 <div id ="container">
   <div id ="animate"></div>
@@ -50,6 +51,26 @@ function myMove() {
       pos++; 
       elem.style.top = pos + "px"; 
       elem.style.left = pos + "px"; 
+    }
+  }
+}
+function myMove1() {
+  let id = null;
+  const elem = document.getElementById("animate");
+  clearInterval(id); 
+  let pos = 0;    
+     
+      elem.style.left = pos + "px"; 
+  
+
+  id = setInterval(frame, 5); 
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      
     }
   }
 }
