@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>  
+
+<!-- 
+<title>Slide Toggle without jQuery</title>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const flip = document.getElementById("flip");
+    const panel = document.getElementById("panel");
+
+    flip.addEventListener("click", function() {
+      panel.style.display = (panel.style.display === "none" || panel.style.display === "") ? "block" : "none";
+    });
+  });
+</script> -->
+
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+</head>
+<body>
+ <a href="https://abhinav6859.github.io/simon_game-2/">Link</a>
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Hello world!</div>
+
+</body>
+</html>
