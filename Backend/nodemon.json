@@ -1,12 +1,15 @@
+
 {
-    "watch": [
-        "Express/",
-        "Node.js/"
-    ],
-    "ext": "js,json",
-    "ignore": [
-        "node_modules/",
-        ".git"
-    ],
-    "legacyWatch": true
+  "watch": [
+    "Express",
+    "Node.js",
+    "."
+  ],
+  "ext": "js,json",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ],
+  "exec": "node Express/server.js",
+  "legacyWatch": true
 }
