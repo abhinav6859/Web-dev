@@ -34,11 +34,24 @@ app.put("/persons", async (req, res) => {
    
     const { name, age, email } = req.body;
    const personData = await Person.findOne({ email });
+
+
+   //const { id} = req.body;
+   //const personData = await Person.findByIdAndUpdate(id,{age:'30'},{new:true});  update by id
    console.log("Person found for update:", personData);
     res.json({ message: "Person created successfully", person: newperson });
 });
 
 
+//deteleting data in Mongodb
+app.delete("/persons/:id", async (req, res) => {
+    const { id} = req.params;
+    const deletedPerson = await Person.findByIdAndDelete(id);
+    console.log("Person deleted:", deletedPerson);
+    res.json({ message: "Person deleted successfully", person: deletedPerson });
+});
+
+// Get all persons
 app.get("/persons", async (req, res) => {
     const persons =  await Person.find();
     res.json(persons);
